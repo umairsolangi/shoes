@@ -1,0 +1,349 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+i{
+    cursor: pointer;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* navigation bar  */
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #ef5777;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+.navbar h1{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 3.5rem;
+    left: 70px;
+    position: relative;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+
+}
+.navbar h3{
+    margin-top: 58px;
+    margin-left: -190px;
+    font-family: sans-serif;
+    color: white;
+}
+.fa-bars{
+    color: white;
+    font-size: 25px;
+    left: 20px;
+    position: relative;
+}
+.search{
+    position: relative;
+    left: 300px;
+}
+.search input{
+    background-color: white;
+    font-size: 1rem;
+    color: rgb(109, 109, 109);
+    padding: 10px 20px;
+    width: 400px;
+    border-radius: 100px;
+    border: 1px solid pink;
+    outline: none;
+    
+}
+.fa-search{
+    color: pink;
+    left: -40px;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+
+}
+.user{
+    position: relative;
+    right: -500px;
+    color: white;
+    font-size: 32px;
+}
+.user i{
+    margin-left: 24px;
+}
+.user a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* drop down */
+
+
+.drop-down{
+    background-color: #f77e99;
+    position: absolute;
+    border-bottom-right-radius:10px ;
+    overflow: hidden;
+    transform: translateX(-200px);
+    transition: 1s;
+    z-index: 999;
+    position: fixed;
+}
+.drop-down a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: cursive;
+    cursor: pointer;
+}
+.drop-down li{ 
+    padding: 20px 30px;
+    cursor: pointer;
+    border-bottom:1px solid #fc9aaf;
+}
+
+.drop-down li:hover{
+    background-color:#fca2b5;
+}
+
+
+/* main section */
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.style1{
+    background-color: #ff88a2;
+    color: white;
+    font-family: cursive;
+    top: 200px;
+    display: inline-block;
+    padding: 30px 20px;
+    font-size: 2rem;
+   display: flex;
+   position: relative;
+   width: 500px;
+   top: -200px;
+   left: 650px;
+   margin-top: 10px;
+   justify-content: center;
+   transition: 2s;
+}
+.style2{
+    background-color:  #ff97ad;
+    color: white;
+    font-family: cursive;
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 3rem;
+   display: flex;
+   position: relative;
+   width: 400px;
+   top: -150px;
+   left: 600px;
+   margin-top: 10px;
+   transition: 2s;
+}
+.style3{
+    background-color:  #ffa1b5;
+    color: white;
+    font-family: cursive;
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 2rem;
+   display: flex;
+   position: relative;
+   width: 460px;
+   top: -100px;
+   left: 700px;
+   margin-top: 10px;
+   transition: 2s;
+}
+
+.main img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,transparent,#000f);
+    position: relative;
+    top: 150px;
+    left: 150px;
+    transition: 1s;
+}
+.main:hover img{
+    left: 100px;
+}
+.main:hover .style1{
+    left: 600px;
+}
+.main:hover .style2{
+    left: 700px;
+}
+.main:hover .style3{
+    left: 550px;
+}
+
+/* products */
+.products{
+    width: 100%;
+}
+.products h2{
+   max-width: 100%;
+    font-size: 2rem;
+    padding: 5px 100px;
+    color: rgb(110, 110, 110);
+    border-top:1px solid rgb(151, 151, 151) ;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.latest-products{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+     justify-content: space-evenly;
+}
+.latest-products div{
+     max-width: 200px;
+     height: 260px;
+     margin: 15px;
+     border-radius: 15px;
+     overflow: hidden;
+     left: 10px;
+     position: relative;
+     box-shadow: 0px 0px 3px black;
+}
+
+.latest-products div img{
+     width:150px;
+     height: 150px;
+     left: 20px;
+     top: 30px;
+     position: relative;
+}
+.latest-products div p{
+     width:200px;
+     height: 50px;
+     top:57px;
+     position: relative;
+     background-color:#ef5777;
+     font-size:1.5rem;
+     padding: 7px 30px;
+     font-family: 'Baloo Bhai 2', cursive;
+     color: white;
+     cursor: pointer;
+}
+.latest-products div p:hover{
+     background-color:#ff2453;
+}
+.latest-products div::before{
+    content: '50% OFF ‎‎‎‎‎‎ only $10';
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color:  rgba(0, 0, 0, 0.712);
+    z-index: 3;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding-top: 30%;
+    color: white;
+    transform: translateY(-220px);
+    transition: 1s ;
+    letter-spacing: 2px;
+}
+.latest-products div:hover::before{
+    transform: translateY(0px);
+
+}
+/*----------------------------- order  ----------------------   */
+
+
+.order{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.order div{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+}
+.order p{
+    margin: 10px;
+    color: rgb(54, 54, 54);
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.service{
+    font-size: 8rem;
+    color:#ff2453;
+    background-color: white;
+    border: 2px solid #ff2453;
+    border-radius: 1000px;
+    padding: 40px;
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.service:hover{
+    color: white;
+    background-color: #ff2453;
+    transform: rotate(360deg);
+}
+
+.fa-mobile-alt{
+    padding: 40px 65px;
+}
+.fa-shipping-fast{
+    padding: 43px 32px;
+}
+.fa-box-open{
+    padding: 43px 32px;
+}
+
+
+
+
+/*--------------footer-------------->*/
+
+  footer{
+      width: 100%;
+      height: 40vh;
+      background-color: #ef5777;
+      display: flex;
+      padding: 20px;
+      justify-content: space-around
+  }
+  .footer div{
+      display: flex;
+  }
+  footer h1{
+      color: rgb(255, 255, 255);
+    font-family: 'Baloo Bhai 2', cursive;
+     font-size: 2rem;
+  }
+  footer a{
+      text-decoration: none;
+      color: rgb(26, 26, 26);
+  }
+footer span{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #f77e99;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(34, 34, 34);
+    font-family: 'Baloo Bhai 2', cursive;
+   font-size: 1.5rem;
+}

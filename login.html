@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Sacramento&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/b690895109.js" crossorigin="anonymous"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+           <a href="index.html"> <i class="fas fa-arrow-left "></i></a>
+            <h1>Shoes</h1>
+            </div>
+        </div>
+    </nav>
+     <!-- -------------login & Registration--------- -->
+     <div class="container">
+     <div class="login">
+         <div class="btns">
+             <h1 class="login-btn" onclick="login()">Login</h1>
+             <h1 class="register-btn" onclick="register()">Register</h1>
+         </div>
+             <form action="bakend.php" class="form">
+                         <span>
+                             <label >Uesrname</label>
+                             <input type="text" required>
+                         </span>
+                         <span>
+                             <label >Password</label>
+                             <input type="password" required>
+                         </span>
+                         <button type="submit">Login</button>
+                        </form>
+             </div>
+              
+         <form action="" class="register">
+            <div class="btns">
+                <h1 class="login-btn" onclick="login()">Login</h1>
+                <h1 class="register-btn" onclick="register()">Register</h1>
+            </div>
+           <div class="create">  
+           <span class="name">
+                <label >First Name</label>
+                <input type="text" required>
+            </span>
+            <span class="name">
+                <label >Last Name</label>
+                <input type="text" required>
+            </span>
+           </div>
+           
+           <div class="email">
+           <span class="name">
+            <label >Email</label>
+            <input type="text" required>
+        </span>
+          </div>
+
+           <div class="email address">
+           <span class="name">
+            <label >Address</label>
+            <input type="text" required>
+        </span>
+          </div>
+
+           <div class="email password">
+           <span class="name">
+            <label >Password</label>
+            <input type="password" required>
+        </span>
+          </div>
+
+           <div class="email password">
+           <span class="name">
+            <label >Confirm Password</label>
+            <input type="password" required>
+        </span>
+          </div>
+
+         <span class="register-button">
+          <button type="submit">Login</button>
+         </span>
+         </form>
+     </div>
+
+
+</body>
+<script>
+   function login(){
+       let login=document.querySelector('.login')
+       let register=document.querySelector('.register')
+       register.style="display:none;"
+       login.style="display:block;"
+       let registerbtn=document.querySelector('.register-btn')
+       registerbtn.style="border:none;"
+       let loginbtn=document.querySelector('.login-btn')
+       loginbtn.style="border-bottom: 3px solid rgb(239,87,119);"
+   }
+   function register(){
+    let login=document.querySelector('.login')
+       let register=document.querySelector('.register')
+       register.style="display:block;"
+       login.style="display:none;"
+   }
+</script>
+</html>
