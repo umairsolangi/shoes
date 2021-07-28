@@ -1,2 +1,2 @@
 # shoes-website
-https://shoaib3456.github.io/shoes-website/
+https://umairsolangi.github.io/shoes/
